@@ -19,13 +19,13 @@ import {
 } from './types';
 import deepReplace from './deep-replace';
 import { getLovelaceConfig } from './utils';
-import * as pjson from '../package.json';
+import { VERSION } from './version';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const HELPERS = (window as any).loadCardHelpers ? (window as any).loadCardHelpers() : undefined;
 
 console.info(
-  `%c DECLUTTERING-CARD \n%c   Version ${pjson.version}   `,
+  `%c DECLUTTERING-CARD \n%c   Version ${VERSION}   `,
   'color: orange; font-weight: bold; background: black',
   'color: white; font-weight: bold; background: dimgray',
 );
