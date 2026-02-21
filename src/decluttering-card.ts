@@ -268,7 +268,7 @@ abstract class DeclutteringElement extends LitElement {
       },
       { once: true },
     );
-    //thing.id = 'declutter-child';
+    thing.id = 'declutter-child';
     handler(thing);
   }
 
