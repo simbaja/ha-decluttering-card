@@ -1,4 +1,5 @@
-import { LitElement, html, customElement, property, state, TemplateResult, css, CSSResult } from 'lit-element';
+import { LitElement, html, TemplateResult, css, CSSResult } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
 import {
   HomeAssistant,
   createThing,
@@ -18,7 +19,6 @@ import {
 } from './types';
 import deepReplace from './deep-replace';
 import { getLovelaceConfig } from './utils';
-import { ResizeObserver } from 'resize-observer';
 import * as pjson from '../package.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
